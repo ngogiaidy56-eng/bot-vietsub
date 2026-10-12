@@ -1,17 +1,18 @@
 {
-  "name": "telegram-admini-bot",
-  "version": "3.0.0",
+  "name": "hendy-cybertech-admini-vietsub",
+  "version": "3.1.0",
   "private": true,
-  "description": "Telegram Admini bot with Mini App, local speech recognition, automatic language detection and offline Vietnamese subtitles",
   "type": "module",
+  "description": "HENDY Cybertech legacy menu integrated with Admini V3 Settings, Telegram Mini App and local Vietsub pipeline",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "check": "node --check index.js && node --check src/subtitles.js"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "telegraf": "^4.16.3"
+    "dotenv": "^16.4.7"
   }
 }
