@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#102a30">
+  <title>HENDY · Admini</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true"><span>H</span><i></i></div>
+      <div class="brand-copy">
+        <p class="eyebrow">CONTROL CENTER</p>
+        <h1>HENDY <span>ADMINI</span></h1>
+      </div>
+      <div class="live-chip"><span class="live-dot"></span><span id="connection-label">SẴN SÀNG</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-orb">✦</div>
+      <p class="eyebrow">TELEGRAM MINI APP</p>
+      <h2>Quản trị theo<br><span>cách của bạn.</span></h2>
+      <p class="hero-description">Bảng điều khiển gọn nhẹ. Chạm nút để kích hoạt hiệu ứng màu ngẫu nhiên.</p>
+      <button class="color-button" id="randomize-all" type="button">
+        <span class="button-icon">✧</span> Đổi màu giao diện <span class="button-arrow">↗</span>
+      </button>
+    </section>
+
+    <section class="section-head">
+      <div><p class="eyebrow">QUICK ACCESS</p><h3>Điều khiển nhanh</h3></div>
+      <span class="section-count">04 MODULES</span>
+    </section>
+
+    <section class="module-grid" aria-label="Các module Admini">
+      <button class="module-card card-one" data-action="admini1" type="button">
+        <span class="module-icon">⌘</span><span class="module-index">01 / CORE</span>
+        <strong>Admini1</strong><span class="module-desc">Quản lý hệ thống</span><span class="module-go">↗</span>
+      </button>
+      <button class="module-card card-two" data-action="admini2" type="button">
+        <span class="module-icon">▥</span><span class="module-index">02 / DATA</span>
+        <strong>Admini2</strong><span class="module-desc">Thống kê & báo cáo</span><span class="module-go">↗</span>
+      </button>
+      <button class="module-card card-three" data-action="admini3" type="button">
+        <span class="module-icon">♙</span><span class="module-index">03 / USERS</span>
+        <strong>Admini3</strong><span class="module-desc">Quản lý người dùng</span><span class="module-go">↗</span>
+      </button>
+      <button class="module-card card-four" data-action="admini4" type="button">
+        <span class="module-icon">⚙</span><span class="module-index">04 / CONFIG</span>
+        <strong>Admini4</strong><span class="module-desc">Cấu hình hệ thống</span><span class="module-go">↗</span>
+      </button>
+    </section>
+
+    <section class="subtitle-panel">
+      <div class="subtitle-symbol">CC</div>
+      <div class="subtitle-copy"><p class="eyebrow">VIDEO TOOLKIT</p><h3>Phụ đề video Telegram</h3><p>Gửi video cho bot để tạo SRT, dịch sang tiếng Việt hoặc xuất video đã gắn phụ đề.</p></div>
+      <button id="subtitle-help" class="icon-button" type="button" aria-label="Hướng dẫn phụ đề">↗</button>
+    </section>
+
+    <footer class="footer"><span id="session-label">Chế độ xem trước</span><span>BUILT FOR TELEGRAM <b>●</b></span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

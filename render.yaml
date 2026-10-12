@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: hendy-admini-vietsub-local
+    runtime: docker
+    healthCheckPath: /api/health
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: SUBTITLE_ALLOWED_IDS
+        sync: false
+      - key: WEB_APP_URL
+        sync: false
+      - key: MAX_VIDEO_MB
+        value: "20"
+      - key: NODE_ENV
+        value: production
